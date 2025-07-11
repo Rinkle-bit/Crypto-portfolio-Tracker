@@ -1,0 +1,97 @@
+/* Theme: Light Mode Overrides */
+body.light-theme {
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  color: #111;
+}
+
+/* General Reset and Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+/* Title and Description */
+.header {
+  margin-bottom: 30px;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.glow {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffd5;
+  text-shadow: 0 0 5px #00ffd5, 0 0 10px #00ffd5, 0 0 15px #00ffd5;
+}
+
+/* Input & Button Styling */
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 280px;
+  max-width: 80%;
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #111;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #00ffd5;
+  color: #111;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00c5a3;
+}
+
+/* Theme Toggle in Top Right */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Rocket Animation */
+.rocket {
+  width: 40px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
